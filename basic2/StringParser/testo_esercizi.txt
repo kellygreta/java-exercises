@@ -1,0 +1,20 @@
+Scrivere una classe StringParser dotata del metodo main e di altri metodi statici (facoltativi) che legga da linea di comando una stringa seguita da un intero n. 
+
+**Se uno dei due argomenti manca, lanciare un messaggio di errore e terminare il programma
+Il programma deve leggere la stringa carattere per carattere e costruire una nuova stringa a seconda dei caratteri incontrati. La stringa finale deve contenere:
+
+-tutti le lettere lette nella stringa iniziale, in maiuscolo, incrementate di n.
+**Assicurarsi che una volta incrementato il carattere esso sia ancora una lettera (A - Z)
+
+-la somma di tutti i numeri incontrati (0 - 9).
+Il tutto senza inserire spazi.
+
+Infine, lo StringParser deve ignorare ogni carattere non numerico e non letterale, escludendolo quindi dalla stringa di output.
+
+Esempio di esecuzione:
+
+$java StringParser a1?b2!c3 1
+	BCD6
+
+$java StringParser xy5z()0 3
+	ABC5 

@@ -1,0 +1,61 @@
+Scrivere un programma che prenda come argomento un file contenente una lista di numeri interi positivi uno per linea.
+
+Ad esempio:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Il programma deve leggere le righe come stringhe e riempire un array: 
+
+int[] num = new int[10]
+
+di dimensione 10.
+
+Al termine della lettura il programma deve stampare il numero di linee che ha saltato secondo le seguenti regole:
+- le righe contenenti valori non numerici
+- tutte le righe a partire dalla undicesima (inclusa)
+
+Infine il programma deve stampare i 10 numeri letti al contrario nel seguente formato:
+(considerato l'esempio sopra)
+9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+
+Il programma deve stampare un messaggio di errore e terminare se il file passato come argomento non esite.
+
+Esempio di esecuzione
+
+sia esempio1.txt:
+
+1
+2
+c2iao
+3
+4
+5
+com6e
+6
+st7ai
+7
+8
+9
+10
+11
+12
+
+
+$java ContaNumeri testo1.txt
+
+	Saltate 5 righe
+	10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+
+Suggerimento:
+Utilizzare la struttura try{}catch(){} per le seguenti eccezioni:
+-FileNotFoundException
+-IndexOutOfBoundsException
+-NumberFormatException
